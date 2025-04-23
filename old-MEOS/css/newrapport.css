@@ -1,0 +1,172 @@
+* {resize: none !important;}
+.rapport-wrapper {display: flex;}
+.report-section {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.input-container {
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid var(--darkgrey);
+  }
+  .input-container label {
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    background: var(--grey);
+    padding: 0 4px;
+    color: var(--black);
+    font-size: var(--normalfontsize);
+  }
+
+  .input-with-border-label {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: var(--normalfontsize);
+  }
+
+  /* =----= Fines bottom right =----= */
+  .add-fines {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid var(--darkgrey);
+}
+  .name-title-fine {
+    font-size: var(--buttons);
+    font-weight: bold;
+  }
+  .fines-header {
+    display: flex;
+    border-bottom: 1px solid var(--darkgrey);
+    justify-content: space-between;
+  }
+  .all-fines {
+    margin: 30px 0px;
+  }
+  .fines-header > span {margin-bottom: 10px;}
+  .fines-bottom {
+    border-top: 1px solid var(--darkgrey);
+    display: flex;
+    gap: 40px;
+  }
+  .fines-bottom > span {margin-top: 10px;
+}
+
+/* =----= Information box =----= */  
+.text-information {min-height: 250px;}
+  .counts-container {
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    background-color: var(--black);
+    color: var(--white); 
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1; 
+}
+#extraInformation {
+    min-height: 300px; 
+}
+.formatting-buttons {margin-bottom: 10px;}
+
+.formatting-buttons button {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+/* =----= Buttons =----= */  
+.top-container-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.top-container-buttons > h1 {
+  margin: 0px 50px;
+}
+.top-container-buttons > button {
+  border: 2px solid var(--black);
+  font-size: var(--buttons);
+  width: 200px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.rightbutton {
+  border-right: none !important;
+}
+
+input {
+  font-size: 18px;
+  padding: 5px; 
+  width: 95%;
+  outline: none;
+  color: black;
+  color: rebeccapurple;
+  background-color: var(--grey);
+  border: none;
+}
+.paddingInput {
+  padding: 8px;
+}
+
+#ice-cream-choice, #mainAgents, #ice-cream-choice3, #rapportTitle {
+  color: black; 
+}
+
+
+/* POPUP  */
+.header-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+}d
+.layout {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+.punishments {
+  flex: 2;
+}
+.punishmentsInfo {
+  flex: 1;
+}
+.strafrecht-background, .verkeerswet-background, .opiumwet-background {
+  padding: 5px 20px;
+  border-radius: 100px;
+  color: var(--white);
+}
+.strafrecht-background {
+  background-color: var(--strafrecht); 
+}
+.verkeerswet-background {
+  background-color: var(--verkeerswet); 
+}
+.opiumwet-background {
+  background-color: var(--opiumwet); 
+}
+
+
+.delete-fine {
+  color: var(--white);
+  background-color: transparent; 
+  border: none;  
+  cursor: pointer; 
+  margin-left: 5px;
+  font-size: var(--buttons); 
+  color: red;
+}
+
+.deleteclass {
+  color: black;
+}
+
+.deleteclass:hover {
+  color: white;
+}

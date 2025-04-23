@@ -1,0 +1,141 @@
+.fine-header-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.fine-header-container {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+
+.fine-header-square {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.opiumwet-box {background-color: var(--opiumwet);}
+.verkeerswet-box {background-color: var(--verkeerswet);}
+.strafrecht-box {background-color: var(--strafrecht);}
+.header-wrapper-text {
+  display: flex;
+  padding-right: 10px;
+  justify-content: space-between;
+  
+}
+.fine-search > input {
+  padding: 10px;
+  width: 250px;
+  border: 2px solid var(--darkgrey);
+  background-color: transparent;
+}
+::placeholder {
+color: var(--darkblue) !important;
+font-size: var(--normalfontsize);}
+input:focus{outline: none;}
+/* Boetes zelf */
+.fine-wrapper {
+  display: grid;
+  padding-right: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 40px;
+}
+.fine-container {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--Lightblack);
+}
+.opiumwet {
+  border-left: 5px solid var(--opiumwet);;
+  color: var(--opiumwet);;
+}
+.strafrecht {
+  border-left: 5px solid var(--strafrecht);
+  color: var(--strafrecht);
+}
+.verkeerswet {
+  border-left: 5px solid var(--verkeerswet);
+  color: var(--verkeerswet);
+}
+.verkeerswet > .fine-question-mark {  color: var(--verkeerswet);}
+.strafrecht > .fine-question-mark {   color: var(--strafrecht);}
+.opiumwet > .fine-question-mark {   color: var(--opiumwet);}
+
+.fine-details {
+  color: var(--white);
+  margin-top: 10px;
+  font-size: var(--normalfontsize);
+}
+
+.fine-question-mark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: var(--buttons);
+  cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+  .header-wrapper-text {
+      flex-direction: column; 
+  }
+  .fine-search {
+      width: 100%; 
+      margin: 20px 0px;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.straffen-pop-up {
+  margin: auto;
+  width: 40%;
+  padding: 60px 0px;
+}
+
+.close {
+  color: var(--algemeen);
+  font-size: var(--buttons);
+  position: absolute;
+  top: 75vh;
+  left: 78vw;
+  z-index: 999;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.popup-wrapper {
+  width: 50vw;
+  height: 70vh;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+.titlePopUpReport {
+  padding: 30px;
+}
+.popUpContent {
+  padding: 0px 50px;
+}

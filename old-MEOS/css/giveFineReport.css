@@ -1,0 +1,98 @@
+.header-content {
+    display: flex;
+    gap: 20px;
+    padding: 50px 0px;
+}
+.layout {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+.punishments {
+    flex: 2;
+}
+.punishmentsInfo {
+    flex: 1;
+}
+.strafrecht-background, .verkeerswet-background {
+    padding: 5px 20px;
+    border-radius: 100px;
+    color: var(--white);
+}
+.strafrecht-background {
+    background-color: var(--strafrecht); 
+}
+.verkeerswet-background {
+    background-color: var(--verkeerswet); 
+}
+
+
+.delete-fine {
+    color: var(--white);
+    background-color: transparent; 
+    border: none;  
+    cursor: pointer; 
+    margin-left: 5px;
+    font-size: var(--buttons); 
+    color: red;
+}
+.punishment-modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .punishment-modal-content {
+    display: flex;
+    flex-direction: column; 
+    background-color: white; 
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .edit-button {
+    margin-top: auto; 
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+    padding: 20px 0; 
+  }
+  
+  .edit-button > button {
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--algemeen);
+    background: transparent;
+  }
+  .all-fines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+.fine {
+    flex: 0 1 auto;
+    padding: 5px; 
+}
+.selectedFineNames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-bottom: 20px;
+}
+
+.bottomrowPunishments {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}

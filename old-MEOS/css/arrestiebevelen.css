@@ -1,0 +1,80 @@
+  .state {
+      width: 30%;
+    text-align: center;
+    border-radius: 12px;
+    padding: 5px 10px;
+    color: #fff;
+  }
+  
+  .open {
+    background-color: #4CAF50;
+  }
+  
+  .closed {
+    background-color: #f44336;
+  }
+  
+  .arrestatiebevel-actions {
+    display: flex;
+  }
+  .arrestatiebevel-row.header {
+    font-weight: bold;
+    background-color: #e0e0e0;
+  }
+  
+  .action-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .action-button i {
+    color: white; 
+  }
+  
+  
+  .info {
+    background-color: #2196F3;
+  }
+  
+  .check {
+    background-color: #FFC107;
+  }
+  
+  .delete {
+    background-color: #f44336;
+  }
+  
+  .action-button::after {
+    content: '';
+  }
+
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name-container agent-container status-container acties-container";
+  }
+  
+  .name-container { grid-area: name-container; }
+  
+  .agent-container { grid-area: agent-container; }
+  
+  .status-container { grid-area: status-container; }
+  
+  .acties-container { grid-area: acties-container; }
+  .top-container-arrest {
+    background-color: #e0e0e0;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+  }

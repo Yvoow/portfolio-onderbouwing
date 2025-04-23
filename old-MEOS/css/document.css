@@ -1,0 +1,131 @@
+.document-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.document-card {
+    position: relative; 
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.delete-button {
+    position: absolute;
+    top: -10px;
+    left: -10px; 
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: red; 
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-button i {
+    position: absolute;
+    top: 8px;
+    left: 8px; 
+    font-size: 15px;
+}
+
+.delete-button::before {
+    content: "";
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.delete-button:hover {
+    color: darkred;
+}
+
+.delete-document {
+    position: absolute;
+    top: -10px;
+    left: -10px; 
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: red; 
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-document i {
+    position: absolute;
+    top: 8px;
+    left: 8px; 
+    font-size: 15px;
+}
+
+.delete-document::before {
+    content: "";
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.delete-document:hover {
+    color: darkred;
+}
+
+.document-card > img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+.document-card:hover {
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+.black-button{
+    border: 2px solid var(--black);
+    font-size: var(--buttons);
+    width: 250px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  .addDocumentPopup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .document-added-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    width: 80%; 
+  }
+  .input-container label {background: white;}
+@media (max-width: 600px) {
+    .document-container {
+        grid-template-columns: 1fr; 
+    }
+}

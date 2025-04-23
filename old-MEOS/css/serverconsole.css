@@ -1,0 +1,79 @@
+.serverconsole-savebuttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.serverconsole-savebuttons > h1 {
+    margin: 0px 50px;
+}   
+.serverconsole-savebuttons > button {
+    border: 2px solid var(--darkblue);
+    font-size: var(--buttons);
+    width: 200px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: var(--black) !important;
+    color: var(--white);
+}
+
+.management-section {
+    width: 70%;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.input-container-management {
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid var(--darkgrey);
+}
+
+.input-container-management label {
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    background: var(--grey);
+    padding: 0 4px;
+    color: var(--black);
+    font-size: var(--normalfontsize);
+} 
+
+.input-with-border-label-management {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: var(--normalfontsize);
+
+} 
+
+#ice-cream-choice, #mainAgents, #ice-cream-choice3 {
+    color: black; 
+}
+
+.input-container {
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid var(--darkgrey);
+  }
+  .input-container label {
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    background: var(--grey);
+    padding: 0 4px;
+    color: var(--black);
+    font-size: var(--normalfontsize);
+  }
+
+  .save-button {
+    padding: 15px 10px;
+  }
+  :hover.save-button {
+    border: none ; 
+  }

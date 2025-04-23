@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+:root {
+  --darkblue: #004684;
+  --babyblue: #b4dce6;
+  --white: #ededf1;
+  --black: #000000;
+  --Lightblack: #181818;
+  --grey: #e3e7eb;
+  --verkeerswet: #00AFFF;
+  --strafrecht: #319c27;
+  --opiumwet: #af5b2a;
+  --orangeIcon: #e6750c;
+  --darkgrey: #ccc;
+  --algemeen: #4A90E2;
+  --wanted: #c53636;
+  --buttons: 20px;
+  --normalfontsize: 16px;
+  --bigheaders: 40px;
+  --mediumheaders: 30px;
+}
+* {
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  font-size: var(--bigheaders);
+  color: var(--darkblue);
+}
+h2 {font-size: var(--mediumheaders);}
+span {font-size: var(--normalfontsize)}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+.all-content {margin: 50px 0px;}
+.header-nav-icon { margin-right: 20px;}
+.side-bar {
+  position: absolute;
+  padding: 0px 15px;
+  width: 250px;
+  height: calc(100% - 0px);
+  max-height: 100%;
+  overflow-y: auto; 
+  background-color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  display: block;
+  width: 80px;
+  margin: 15px 0px;
+  margin-bottom: 50px;
+}
+
+.side-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-bar-item {
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: var(--buttons);
+  color: var(--white);
+}
+
+.side-bar-item > a {
+  color: var(--white);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.sidebar-icon {width: 35px;}
+
+.bottom-section-sidebar {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.sidebar-icon-bottom {
+  width: 50px;
+  height: 50px;
+  margin-right:10px;
+  border-radius: 50%;
+}
+
+.text-section-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-sidebar {
+  margin: 5px 0;
+  color: var(--white);
+}
+.active, .side-bar-item > a:hover, .dropdown-content > a:hover {color: var(--babyblue) !important; font-weight: bold;}
+
+.sidebar-text-logo {
+  display: flex;
+  gap: 20px;
+  color: var(--white);
+  align-items: center;
+}
+.dropdown-content {
+  display: none;
+  padding: 0px 10px;
+  padding-top: 12px;
+}
+.dropdown-content a {
+  color: var(--white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {display: block; opacity: 1;}
+.dropdown-arrow {margin-left: 10px;}
+
+/* Content */
+.content {
+  position: absolute;
+  padding: 0px 30px;
+  left: 250px;
+  width: calc(100% - 310px);
+  height: calc(100% - 0px);
+  overflow-y: auto;
+  background-color: var(--grey);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.searched-for {
+  background-color: var(--opiumwet);
+  color: var(--white);
+  font-size: var(--normalfontsize);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.black-button:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: var(--black) !important;
+  color: var(--white);
+}
+.normal-button:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: var(--darkblue) !important;
+  color: var(--white);
+}
+.wanted-button:hover {
+  background-color: var(--wanted) !important;
+}
+
+/* Page numbering */
+.page-numbering {
+  padding: 30px 0px !important;
+  margin-top: 10px;
+  max-width: 50% !important;
+}
+.page-numbering a {
+  color: var(--black);
+  max-width: 50% !important;
+  margin: 5px;
+}
+
+.page-numbering a.active {
+  font-weight: bold;
+  color: var(--algemeen2);
+}
+.nothingFound {
+  color: var(--black);
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+  background-color: var(--babyblue); 
+  border-radius: 6px;
+}
+
+.side-bar::-webkit-scrollbar-track {
+  background-color: var(--darkblue); 
+}
+
+
+
+#rang, #specialInfo, #trainingName, #roepNummer, #citizenSearch, #vehicleSearch, #reductionPercent   {
+  color: black;
+}
