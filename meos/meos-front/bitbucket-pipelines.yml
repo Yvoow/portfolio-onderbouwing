@@ -1,0 +1,38 @@
+image: node:latest
+
+definitions:
+  steps:
+    - step: &build-deploy-testing
+        name: Build and deploy to test
+        deployment: test
+        caches:
+          - node
+        script:
+          - rm -rf dist
+          - export VITE_RELEASED_AT="$(date +%Y-%m-%d\ %H:%M:%S)"
+          - npm install
+          - npm run build
+          - npm install -g @azure/static-web-apps-cli
+          - swa --verbose=silly deploy "$BITBUCKET_CLONE_DIR/dist" --deployment-token=$deployment_token --env=production
+        artifacts:
+          - dist/**
+
+    - step: &build-deploy-production
+          name: Build and deploy to test
+          deployment: production
+          caches:
+            - node
+          script:
+            - echo $deployment_token
+            - chown -R 165536:165536 $BITBUCKET_CLONE_DIR
+            - pipe: microsoft/azure-static-web-apps-deploy:main
+              variables:
+                  APP_LOCATION: '$BITBUCKET_CLONE_DIR'
+                  OUTPUT_LOCATION: '$BITBUCKET_CLONE_DIR/dist'
+                  API_TOKEN: $deployment_token_production
+pipelines:
+  branches:
+    main:
+      - step: *build-deploy-testing
+    release/*:
+      - step: *build-deploy-production
