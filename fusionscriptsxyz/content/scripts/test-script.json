@@ -1,0 +1,29 @@
+{
+    "name": "Test script",
+    "slug": "test-script",
+    "desc": "This is a test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test script",
+    "showcase": "https://www.youtube.com/embed/orgY1yFBkTw?si=ZERMQYkMsyToqz5g",
+    "tags": ["ESX", "QBCore", "Escrow"],
+    "features": [
+        {
+            "name": "Feature 1",
+            "description": "This is a feature",
+            "icon": "i-heroicons-check-circle"
+        },
+        {
+            "name": "Feature 2",
+            "description": "This is a feature",
+            "icon": "i-heroicons-check-circle"
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "fmLib",
+            "link": "https://github.com/"
+        },
+        {
+            "name": "fmLib",
+            "link": "https://github.com/"
+        }
+    ]
+}

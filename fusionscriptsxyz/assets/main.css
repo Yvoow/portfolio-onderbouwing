@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+@import "@nuxt/ui";
+
+body {
+    @apply bg-gradient-to-br from-fsorange-500/20 to-fscyan-500/20 text-white;
+}
+
+.dark {
+    --ui-primary: #FF8563;
+    --ui-secondary: #20D0D0;
+}
+
+@theme {
+    /* fsorange */
+    --color-fsorange-50:  #fff1eb;
+    --color-fsorange-100: #ffe0d1;
+    --color-fsorange-200: #ffc2a3;
+    --color-fsorange-300: #ffa57a;
+    --color-fsorange-400: #ff9163;
+    --color-fsorange-500: #FF8563; /* original */
+    --color-fsorange-600: #e67655;
+    --color-fsorange-700: #bf5f45;
+    --color-fsorange-800: #9f4f3a;
+    --color-fsorange-900: #7f3f2f;
+    
+    /* fsred */
+    --color-fsred-50:  #ffeaea;
+    --color-fsred-100: #ffd6d6;
+    --color-fsred-200: #ffb3b3;
+    --color-fsred-300: #ff9999;
+    --color-fsred-400: #ff8787;
+    --color-fsred-500: #FF7F7F; /* original */
+    --color-fsred-600: #e66f6f;
+    --color-fsred-700: #bf5a5a;
+    --color-fsred-800: #994646;
+    --color-fsred-900: #7a3a3a;
+    
+    /* fsblue */
+    --color-fsblue-50:  #eaf3fd;
+    --color-fsblue-100: #d0e4fc;
+    --color-fsblue-200: #a8ccf9;
+    --color-fsblue-300: #7fb3f6;
+    --color-fsblue-400: #5d9ff1;
+    --color-fsblue-500: #528AD7; /* original */
+    --color-fsblue-600: #4171ba;
+    --color-fsblue-700: #355b97;
+    --color-fsblue-800: #2c4a79;
+    --color-fsblue-900: #243a5e;
+    
+    /* fscyan */
+    --color-fscyan-50:  #e1fafa;
+    --color-fscyan-100: #b6f2f2;
+    --color-fscyan-200: #86e8e8;
+    --color-fscyan-300: #54dddd;
+    --color-fscyan-400: #2cd7d7;
+    --color-fscyan-500: #20D0D0; /* original */
+    --color-fscyan-600: #1ab6b6;
+    --color-fscyan-700: #149999;
+    --color-fscyan-800: #107c7c;
+    --color-fscyan-900: #0d6666;
+}

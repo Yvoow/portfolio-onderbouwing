@@ -1,0 +1,27 @@
+{
+    "title": "Voertuigensysteem",
+    "desc": "Een geavanceerd systeem voor het beheren van voertuigen binnen de server.",
+    "showcase": {
+      "contentType": "image",
+      "content": "/images/test.png"
+    },
+    "tags": ["ESX", "QBCore"],
+    "features": [
+      {
+        "name": "Garage menu",
+        "desc": "Spelers kunnen hun voertuigen beheren via een intuïtief garage menu.",
+        "icon": "fas fa-car"
+      },
+      {
+        "name": "Voertuig opslaan",
+        "desc": "Automatische opslag van voertuiglocatie en staat.",
+        "icon": "fas fa-save"
+      },
+      {
+        "name": "Impound functie",
+        "desc": "Admins kunnen voertuigen in beslag nemen en terugzetten.",
+        "icon": "fas fa-gavel"
+      }
+    ]
+  }
+  
